@@ -2,7 +2,7 @@
     "name": "vsc-deot-theme",
     "displayName": "Deot Theme",
     "description": "Personal Theme",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "deot",
     "repository": "https://dev.azure.com/zrd0921/Deot%20Theme/_git/Deot%20Theme",
     "engines": {

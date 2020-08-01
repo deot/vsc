@@ -53,6 +53,7 @@
         "list.inactiveSelectionForeground": "#dddfe1",
         "list.hoverBackground": "#293d45",
         "list.hoverForeground": "#dddfe1",
+        "tree.indentGuidesStroke": "#252b3900",
         // 非活动区域选项卡的颜色【即打开两个文件，上分选项卡的颜色】
         "tab.inactiveBackground": "#293d45",
         "tab.border": "#252b39",
@@ -149,6 +150,7 @@
             "meta.function.method variable.other.readwrite", 
             "meta.function-call.with-arguments punctuation.dollar.js",
             "meta.function-call.with-arguments variable.other.readwrite",
+            "meta.function.arrow variable.other.readwrite"
         ],
         "settings":
         {
@@ -188,6 +190,17 @@
         "settings":
         {
             "foreground": "#95DCFF"
+        }
+    },
+    {
+        "name": "modules.exports",
+        "scope": [
+            "support.type.object.module keyword.operator.accessor",
+            "keyword.operator.accessor support.type.object.module"
+        ],
+        "settings":
+        {
+            "foreground": "#FAC863"
         }
     },
     {
