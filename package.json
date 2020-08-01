@@ -1,0 +1,21 @@
+{
+    "name": "vsc-deot-theme",
+    "displayName": "Deot Theme",
+    "description": "Personal Theme",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Deot Theme Darker",
+                "uiTheme": "vs-dark",
+                "path": "./themes/deot-theme-darker.json"
+            }
+        ]
+    }
+}
