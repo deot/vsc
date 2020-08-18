@@ -150,7 +150,11 @@
             "meta.function.method variable.other.readwrite", 
             "meta.function-call.with-arguments punctuation.dollar.js",
             "meta.function-call.with-arguments variable.other.readwrite",
-            "meta.function.arrow variable.other.readwrite"
+            "meta.function.arrow variable.other.readwrite",
+            "source.vue meta.method.declaration meta.parameters variable.parameter",
+            "source.css.scss meta.at-rule.include variable",
+            "source.css.scss meta.at-rule.include support.constant.property-value",
+            "source.css.scss meta.at-rule.include support.type.property-name.css"
         ],
         "settings":
         {
@@ -218,6 +222,16 @@
             "support.type.object.process",
             "support.type.object.console",
             "support.type.object.node"
+        ],
+        "settings":
+        {
+            "foreground": "#fac863"
+        }
+    },
+    {
+        "name": "window",
+        "scope": [
+            "source.vue meta.block meta.function-call variable.other.object"
         ],
         "settings":
         {
@@ -392,7 +406,10 @@
     },
     {
         "name": "CSS class",
-        "scope": "entity.other.attribute-name.class",
+        "scope": [
+            "entity.other.attribute-name.class variable",
+            "source.css.scss meta.definition.variable variable"
+        ],
         "settings":
         {
             "foreground": "#fac863"
@@ -400,7 +417,10 @@
     },
     {
         "name": "CSS ID",
-        "scope": "entity.other.attribute-name.id",
+        "scope": [
+            "entity.other.attribute-name.id",
+            "source.css.scss meta.property-value support.constant.property-value"
+        ],
         "settings":
         {
             "foreground": "#F78C6C"
@@ -420,6 +440,17 @@
         "settings":
         {
             "foreground": "#B2CCD6"
+        }
+    },
+    {
+        "name": "CSS classes",
+        "scope": [
+            "source.css.scss entity.other.attribute-name.class",
+            "source.css.scss entity.other.attribute-name.pseudo-class"
+        ],
+        "settings":
+        {
+            "foreground": "#FAC863"
         }
     },
     {
@@ -651,7 +682,9 @@
     },
     {
         "name": "ts下的[]",
-        "scope": "meta.brace.square.ts",
+        "scope": [
+            "meta.brace.square.ts"
+        ],
         "settings":
         {
             "foreground": "#EEFFFF"
