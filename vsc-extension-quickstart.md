@@ -1,13 +1,21 @@
-## 如何调试
+## 主题设置
+### 如何调试
 
 1. F5 打开Debug模式，新窗口打开当前文件夹，定位到`demo/*`
 2. 按下 `Command+Shift+P` 打开命令面板输入`Developer: Inspect Editor Tokens and Scopes`, 光标查看属性
 3. 直接修改`themes/deot-theme-color-theme.json`
 
-## 其他技巧
+### 其他技巧
 
 - 主题配置的所有属性：https://code.visualstudio.com/api/references/theme-color
 - 打开`Developer Tools`查看样式，看是否有`Css Vars`支持
+
+
+## 扩展
+### 如何调试
+1. F5 打开Debug模式，新窗口打开当前文件夹，定位到`demo/*`
+2. 按下 `Command+Shift+P` 打开命令面板输入`Deot Debug`
+3. 修改`src/extentsion`, 新窗口`Command+R`
 
 ## 如何发布
 

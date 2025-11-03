@@ -1,0 +1,52 @@
+{
+	"extensions.autoUpdate": false,
+	"emmet.syntaxProfiles": {
+		"vue": "html",
+		"vue-html": "html"
+	},
+	"emmet.triggerExpansionOnTab": true,
+	"files.exclude": {
+		"**/.DS_Store": true,
+		"**/.git": false,
+		"**/.svn": false
+	},
+	"files.hotExit": "onExit",
+	"workbench.colorTheme": "Deot Theme Darker",
+	"workbench.iconTheme": "vscode-great-icons",
+	"workbench.startupEditor": "newUntitledFile",
+	"explorer.compactFolders": false,
+	"scm.compactFolders": false,
+	"eslint.format.enable": true,
+	"[scss]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"stylelint.packageManager": "pnpm",
+	"stylelint.validate": [
+		"css",
+		"postcss",
+		"scss",
+		"vue"
+	],
+	"editor.accessibilitySupport": "off",
+	"editor.autoIndent": "brackets",
+	"editor.cursorStyle": "line",
+	"editor.fontLigatures": false,
+	"editor.fontSize": 15,
+	"editor.fontWeight": "normal",
+	"editor.formatOnPaste": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.renderControlCharacters": false,
+	"editor.renderWhitespace": "all",
+	"editor.scrollBeyondLastLine": true,
+	"editor.snippetSuggestions": "top",
+	"editor.insertSpaces": false,
+	"editor.fontFamily": "宋体",
+	"editor.tabSize": 4,
+	"editor.wordWrap": "off",
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.bracketPairColorization.enabled": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true
+}
