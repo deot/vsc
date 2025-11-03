@@ -1,7 +1,11 @@
 const btn = document.getElementById('btn')
 let count = 0
-function render() {
-  btn.innerText = `Count: ${count}`
+/**
+ * any
+ * @params v ~
+ */
+function render(v) {
+  btn.innerText = `Count: ${count} ${v}`
 }
 btn.addEventListener('click', () => {
   // Count from 1 to 10.

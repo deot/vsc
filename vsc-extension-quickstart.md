@@ -1,28 +1,21 @@
-# Welcome to your VS Code Extension
+## 如何调试
 
-## What's in the folder
+1. F5 打开Debug模式，新窗口打开当前文件夹，定位到`demo/*`
+2. 按下 `Command+Shift+P` 打开命令面板输入`Developer: Inspect Editor Tokens and Scopes`, 光标查看属性
+3. 直接修改`themes/deot-theme-color-theme.json`
 
-* This folder contains all of the files necessary for your color theme extension.
-* `package.json` - this is the manifest file that defines the location of the theme file and specifies the base theme of the theme.
-* `themes/deot-theme-color-theme.json` - the color theme definition file.
+## 其他技巧
 
-## Get up and running straight away
+- 主题配置的所有属性：https://code.visualstudio.com/api/references/theme-color
+- 打开`Developer Tools`查看样式，看是否有`Css Vars`支持
 
-* Press `F5` to open a new window with your extension loaded.
-* Open `File > Preferences > Color Themes` and pick your color theme.
-* Open a file that has a language associated. The languages' configured grammar will tokenize the text and assign 'scopes' to the tokens. To examine these scopes, invoke the `Inspect TM Scopes` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) .
+## 如何发布
 
-## Make changes
+> 确保登录：vsce login deot 
+> 获取Personal Access Token（Full Access(避免发版时401)）：https://dev.azure.com/
 
-* Changes to the theme file are automatically applied to the Extension Development Host window.
+1. 手动调整版本号(package.json)
+2. `npm install -g @vscode/vsce`
+3. `npm run publish`
+4. 查看发版进度`https://marketplace.visualstudio.com/manage/publishers/deot`
 
-## Adopt your theme to Visual Studio Code
-
-* The token colorization is done based on standard TextMate themes. Colors are matched against one or more scopes.
-
-To learn more about scopes and how they're used, check out the [color theme](https://code.visualstudio.com/api/extension-guides/color-theme) documentation.
-
-## Install your extension
-
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.

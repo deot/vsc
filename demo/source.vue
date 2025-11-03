@@ -1,5 +1,11 @@
 <template>
-	<div v-if="show" @click="handleClick">
+	<div
+		v-if="show"
+		class="any"
+		id="any"
+		style="color: red"
+		@click="handleClick"
+	>
 		<span>Hello world</span>
 	</div>
 </template>
