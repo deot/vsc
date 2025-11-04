@@ -155,10 +155,18 @@
 	},
 	{
 		"name": "Variable",
-		"scope": "variable.parameter, support.variable, variable.language, support.constant, meta.function-call.arguments",
+		"scope": "variable.parameter, variable.language, support.constant, meta.function-call.arguments",
 		"settings":
 		{
 			"foreground": "#F78C6C"
+		}
+	},
+	{
+		"name": "Any.length",
+		"scope": "support.variable",
+		"settings":
+		{
+			"foreground": "#82AAFF"
 		}
 	},
 	{
@@ -217,6 +225,47 @@
 			"variable.other.readwrite",
 			"variable.other.constant",
 			"variable.other.property"
+		],
+		"settings":
+		{
+			"foreground": "#EEFFFF"
+		}
+	},
+	{
+		"name": "Array/Number...",
+		"scope": [
+			"meta.object.member variable.other.readwrite"
+		],
+		"settings":
+		{
+			"foreground": "#FAC863"
+		}
+	},
+	{
+		"name": "{ [xxx1]: xxx2[any] }",
+		"scope": [
+			"meta.object-literal variable.other.readwrite",
+			"meta.method.declaration meta.object.member variable.other.readwrite"
+		],
+		"settings":
+		{
+			"foreground": "#EEFFFF"
+		}
+	},
+	{
+		"name": "对象的any.xxx",
+		"scope": [
+			"meta.block variable.other.property"
+		],
+		"settings":
+		{
+			"foreground": "#82AAFF"
+		}
+	},
+	{
+		"name": "this.xxx",
+		"scope": [
+			"meta.class meta.method.declaration variable.other.property"
 		],
 		"settings":
 		{
@@ -292,12 +341,54 @@
 	{
 		"name": "ts-node下需要高亮的参数，如process",
 		"scope": [
-			"variable.other.object.ts",
-			"meta.var.expr.ts variable.other.object.property.ts"
+			"variable.other.object",
+			"meta.var.expr variable.other.object.property"
 		],
 		"settings":
 		{
 			"foreground": "#fac863"
+		}
+	},
+	{
+		"name": "xxxx.any.any",
+		"scope": [
+			"meta.block variable.other.object"
+		],
+		"settings":
+		{
+			"foreground": "#EEFFFF"
+		}
+	},
+	{
+		"name": "Xxxx.any()",
+		"scope": [
+			"meta.block meta.block meta.function-call variable.other.object"
+		],
+		"settings":
+		{
+			"foreground": "#fac863"
+		}
+	},
+	{
+		"name": "xxxx.any()",
+		"scope": [
+			"meta.arrow variable.other.object",
+			"meta.block meta.var.expr meta.block variable.other.object",
+			"meta.embedded.expression meta.function-call variable.other.object"
+		],
+		"settings":
+		{
+			"foreground": "#EEFFFF"
+		}
+	},
+	{
+		"name": "any.xxx.any",
+		"scope": [
+			"meta.var.expr variable.other.object.property"
+		],
+		"settings":
+		{
+			"foreground": "#82AAFF"
 		}
 	},
 	{
@@ -459,10 +550,20 @@
 	},
 	{
 		"name": "JSON key",
-		"scope": "meta.object-literal.key, meta.object-literal.key string, support.type.property-name.json",
+		"scope": "meta.object-literal.key, support.type.property-name.json",
 		"settings":
 		{
 			"foreground": "#EEFFFF"
+		}
+	},
+	{
+		"name": "对象的key",
+		"scope":[
+			 "meta.var.expr meta.object.member meta.object-literal.key"
+		],
+		"settings":
+		{
+			"foreground": "#82AAFF"
 		}
 	},
 	{
@@ -752,7 +853,7 @@
 	{
 		"name": "ts下的[]",
 		"scope": [
-			"meta.brace.square.ts"
+			"meta.brace.square"
 		],
 		"settings":
 		{
