@@ -2,7 +2,7 @@
   "name": "vsc-preferences",
   "displayName": "Deot Preferences",
   "description": "Personal Theme & Commands",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "deot",
   "repository": "https://dev.azure.com/zrd0921/vsc/_git/vsc",
   "engines": {
@@ -24,53 +24,265 @@
       }
     ],
     "commands": [
-      { "command": "deot.debug", "title": "Deot/Debug" },
-      { "command": "deot.pasteAndIndent", "title": "pasteAndIndent" },
-      { "command": "deot.2spaceToTab", "title": "2spaceToTab" },
-      { "command": "deot.4spaceToTab", "title": "4spaceToTab" },
-      { "command": "deot.setSyntax.c", "title": "Set Syntax: C"},
-      { "command": "deot.setSyntax.cpp", "title": "Set Syntax: C++"},
-      { "command": "deot.setSyntax.csharp", "title": "Set Syntax: C#"},
-      { "command": "deot.setSyntax.css", "title": "Set Syntax: CSS"},
-      { "command": "deot.setSyntax.dockerfile", "title": "Set Syntax: Dockerfile"},
-      { "command": "deot.setSyntax.go", "title": "Set Syntax: Go"},
-      { "command": "deot.setSyntax.handlebars", "title": "Set Syntax: Handlebars"},
-      { "command": "deot.setSyntax.html", "title": "Set Syntax: HTML"},
-      { "command": "deot.setSyntax.java", "title": "Set Syntax: Java"},
-      { "command": "deot.setSyntax.javascript", "title": "Set Syntax: JavaScript (js)"},
-      { "command": "deot.setSyntax.javascriptreact", "title": "Set Syntax: JavaScript React (js/jsx)"},
-      { "command": "deot.setSyntax.jsx", "title": "Set Syntax: JSX"},
-      { "command": "deot.setSyntax.json", "title": "Set Syntax: JSON"},
-      { "command": "deot.setSyntax.jsonc", "title": "Set Syntax: JSON with Comments"},
-      { "command": "deot.setSyntax.latex", "title": "Set Syntax: LaTeX"},
-      { "command": "deot.setSyntax.less", "title": "Set Syntax: Less"},
-      { "command": "deot.setSyntax.lua", "title": "Set Syntax: Lua"},
-      { "command": "deot.setSyntax.makefile", "title": "Set Syntax: Makefile"},
-      { "command": "deot.setSyntax.markdown", "title": "Set Syntax: Markdown (md)"},
-      { "command": "deot.setSyntax.objective-c", "title": "Set Syntax: Objective-C"},
-      { "command": "deot.setSyntax.objective-cpp", "title": "Set Syntax: Objective-C++"},
-      { "command": "deot.setSyntax.php", "title": "Set Syntax: PHP"},
-      { "command": "deot.setSyntax.plaintext", "title": "Set Syntax: Plain Text"},
-      { "command": "deot.setSyntax.powershell", "title": "Set Syntax: PowerShell"},
-      { "command": "deot.setSyntax.pug", "title": "Set Syntax: Pug"},
-      { "command": "deot.setSyntax.python", "title": "Set Syntax: Python (py)"},
-      { "command": "deot.setSyntax.r", "title": "Set Syntax: R"},
-      { "command": "deot.setSyntax.ruby", "title": "Set Syntax: Ruby"},
-      { "command": "deot.setSyntax.rust", "title": "Set Syntax: Rust"},
-      { "command": "deot.setSyntax.scss", "title": "Set Syntax: SCSS"},
-      { "command": "deot.setSyntax.sass", "title": "Set Syntax: SASS"},
-      { "command": "deot.setSyntax.shellscript", "title": "Set Syntax: Shell Script (Bash)"},
-      { "command": "deot.setSyntax.sql", "title": "Set Syntax: SQL"},
-      { "command": "deot.setSyntax.stylus", "title": "Set Syntax: Stylus"},
-      { "command": "deot.setSyntax.swift", "title": "Set Syntax: Swift"},
-      { "command": "deot.setSyntax.typescript", "title": "Set Syntax: TypeScript (ts)"},
-      { "command": "deot.setSyntax.typescriptreact", "title": "Set Syntax: TypeScript React (ts)"},
-      { "command": "deot.setSyntax.vb", "title": "Set Syntax: Visual Basic"},
-      { "command": "deot.setSyntax.vue", "title": "Set Syntax: Vue"},
-      { "command": "deot.setSyntax.vue-html", "title": "Set Syntax: Vue HTML"},
-      { "command": "deot.setSyntax.xml", "title": "Set Syntax: XML"},
-      { "command": "deot.setSyntax.yaml", "title": "Set Syntax: YAML"}
-    ]
+      {
+        "command": "deot.debug",
+        "title": "Deot/Debug"
+      },
+      {
+        "command": "revealFileInOS",
+        "title": "Reveal in Finder"
+      },
+      {
+        "command": "copyFilePath",
+        "title": "Copy File Path"
+      },
+      {
+        "command": "deot.pasteAndIndent",
+        "title": "pasteAndIndent"
+      },
+      {
+        "command": "deot.2spaceToTab",
+        "title": "2spaceToTab"
+      },
+      {
+        "command": "deot.4spaceToTab",
+        "title": "4spaceToTab"
+      },
+      {
+        "command": "deot.setSyntax.c",
+        "title": "Set Syntax: C"
+      },
+      {
+        "command": "deot.setSyntax.cpp",
+        "title": "Set Syntax: C++"
+      },
+      {
+        "command": "deot.setSyntax.csharp",
+        "title": "Set Syntax: C#"
+      },
+      {
+        "command": "deot.setSyntax.css",
+        "title": "Set Syntax: CSS"
+      },
+      {
+        "command": "deot.setSyntax.dockerfile",
+        "title": "Set Syntax: Dockerfile"
+      },
+      {
+        "command": "deot.setSyntax.go",
+        "title": "Set Syntax: Go"
+      },
+      {
+        "command": "deot.setSyntax.handlebars",
+        "title": "Set Syntax: Handlebars"
+      },
+      {
+        "command": "deot.setSyntax.html",
+        "title": "Set Syntax: HTML"
+      },
+      {
+        "command": "deot.setSyntax.java",
+        "title": "Set Syntax: Java"
+      },
+      {
+        "command": "deot.setSyntax.javascript",
+        "title": "Set Syntax: JavaScript (js)"
+      },
+      {
+        "command": "deot.setSyntax.javascriptreact",
+        "title": "Set Syntax: JavaScript React (js/jsx)"
+      },
+      {
+        "command": "deot.setSyntax.jsx",
+        "title": "Set Syntax: JSX"
+      },
+      {
+        "command": "deot.setSyntax.json",
+        "title": "Set Syntax: JSON"
+      },
+      {
+        "command": "deot.setSyntax.jsonc",
+        "title": "Set Syntax: JSON with Comments"
+      },
+      {
+        "command": "deot.setSyntax.latex",
+        "title": "Set Syntax: LaTeX"
+      },
+      {
+        "command": "deot.setSyntax.less",
+        "title": "Set Syntax: Less"
+      },
+      {
+        "command": "deot.setSyntax.lua",
+        "title": "Set Syntax: Lua"
+      },
+      {
+        "command": "deot.setSyntax.makefile",
+        "title": "Set Syntax: Makefile"
+      },
+      {
+        "command": "deot.setSyntax.markdown",
+        "title": "Set Syntax: Markdown (md)"
+      },
+      {
+        "command": "deot.setSyntax.objective-c",
+        "title": "Set Syntax: Objective-C"
+      },
+      {
+        "command": "deot.setSyntax.objective-cpp",
+        "title": "Set Syntax: Objective-C++"
+      },
+      {
+        "command": "deot.setSyntax.php",
+        "title": "Set Syntax: PHP"
+      },
+      {
+        "command": "deot.setSyntax.plaintext",
+        "title": "Set Syntax: Plain Text"
+      },
+      {
+        "command": "deot.setSyntax.powershell",
+        "title": "Set Syntax: PowerShell"
+      },
+      {
+        "command": "deot.setSyntax.pug",
+        "title": "Set Syntax: Pug"
+      },
+      {
+        "command": "deot.setSyntax.python",
+        "title": "Set Syntax: Python (py)"
+      },
+      {
+        "command": "deot.setSyntax.r",
+        "title": "Set Syntax: R"
+      },
+      {
+        "command": "deot.setSyntax.ruby",
+        "title": "Set Syntax: Ruby"
+      },
+      {
+        "command": "deot.setSyntax.rust",
+        "title": "Set Syntax: Rust"
+      },
+      {
+        "command": "deot.setSyntax.scss",
+        "title": "Set Syntax: SCSS"
+      },
+      {
+        "command": "deot.setSyntax.sass",
+        "title": "Set Syntax: SASS"
+      },
+      {
+        "command": "deot.setSyntax.shellscript",
+        "title": "Set Syntax: Shell Script (Bash)"
+      },
+      {
+        "command": "deot.setSyntax.sql",
+        "title": "Set Syntax: SQL"
+      },
+      {
+        "command": "deot.setSyntax.stylus",
+        "title": "Set Syntax: Stylus"
+      },
+      {
+        "command": "deot.setSyntax.swift",
+        "title": "Set Syntax: Swift"
+      },
+      {
+        "command": "deot.setSyntax.typescript",
+        "title": "Set Syntax: TypeScript (ts)"
+      },
+      {
+        "command": "deot.setSyntax.typescriptreact",
+        "title": "Set Syntax: TypeScript React (ts)"
+      },
+      {
+        "command": "deot.setSyntax.vb",
+        "title": "Set Syntax: Visual Basic"
+      },
+      {
+        "command": "deot.setSyntax.vue",
+        "title": "Set Syntax: Vue"
+      },
+      {
+        "command": "deot.setSyntax.vue-html",
+        "title": "Set Syntax: Vue HTML"
+      },
+      {
+        "command": "deot.setSyntax.xml",
+        "title": "Set Syntax: XML"
+      },
+      {
+        "command": "deot.setSyntax.yaml",
+        "title": "Set Syntax: YAML"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "cmd+2",
+        "command": "deot.2spaceToTab",
+        "when": "editorFocus"
+      },
+      {
+        "key": "cmd+4",
+        "command": "deot.4spaceToTab",
+        "when": "editorFocus"
+      },
+      {
+        "key": "cmd+shift+v",
+        "command": "deot.pasteAndIndent",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "cmd+alt+1",
+        "command": "workbench.action.editorLayoutSingle"
+      },
+      {
+        "key": "cmd+alt+2",
+        "command": "workbench.action.editorLayoutTwoColumns"
+      },
+      {
+        "key": "cmd+alt+3",
+        "command": "workbench.action.editorLayoutThreeColumns"
+      },
+      {
+        "key": "cmd+alt+4",
+        "command": "workbench.action.editorLayoutFourColumns"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "revealFileInOS",
+          "when": "editorFocus"
+        },
+        {
+          "command": "copyFilePath",
+          "when": "editorFocus"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "revealFileInOS",
+          "when": "config.deot.showMenu",
+          "group": "deot"
+        },
+        {
+          "command": "copyFilePath",
+          "when": "config.deot.showMenu",
+          "group": "deot"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Deot Preferences",
+      "properties": {
+        "deot.showMenu": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
   },
   "scripts": {
     "publish": "npm run vscode:prepublish && vsce package && vsce publish",

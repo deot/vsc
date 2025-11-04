@@ -3,36 +3,5 @@
         "key": "cmd+e",
         "command": "editor.emmet.action.expandAbbreviation",
         "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
-    },
-    {
-        "key": "cmd+2",
-        "command": "deot.2spaceToTab",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+4",
-        "command": "deot.4spaceToTab",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+shift+v",
-        "command": "deot.pasteAndIndent",
-        "when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "cmd+alt+1",
-		"command": "workbench.action.editorLayoutSingle"
-	},
-	{
-		"key": "cmd+alt+2",
-		"command": "workbench.action.editorLayoutTwoColumns"
-	},
-	{
-		"key": "cmd+alt+3",
-		"command": "workbench.action.editorLayoutThreeColumns"
-	},
-	{
-		"key": "cmd+alt+4",
-		"command": "workbench.action.editorLayoutFourColumns"
-	}
+    }
 ]
