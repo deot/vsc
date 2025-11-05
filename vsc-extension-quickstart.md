@@ -14,7 +14,7 @@
 ## 扩展
 ### 如何调试
 1. F5 打开Debug模式，新窗口打开当前文件夹，定位到`demo/*`
-2. 按下 `Command+Shift+P` 打开命令面板输入`Deot Debug`
+2. 按下 `Command+Shift+P` 打开命令面板输入`dd/Debug`
 3. 修改`src/extentsion`, 新窗口`Command+R`
 
 ### 其他技巧

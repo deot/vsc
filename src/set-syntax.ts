@@ -1,64 +1,10 @@
 import * as vscode from 'vscode';
 
-const setSyntax = async (languageId: string) => {
-	const activeEditor = vscode.window.activeTextEditor;
-
-	if (activeEditor) {
-		await vscode.languages.setTextDocumentLanguage(activeEditor.document,
-		languageId);
+export const setSyntax = async () => {
+	const editor = vscode.window.activeTextEditor;
+	if (!editor) {
+		vscode.window.showErrorMessage('No file is open!');
+		return;
 	}
-};
-
-export const setSyntaxs = () => {
-	const supportedLanguages = [
-		'c',
-		'cpp',
-		'csharp',
-		'css',
-		'dockerfile',
-		'go',
-		'handlebars',
-		'html',
-		'java',
-		'javascript',
-		'javascriptreact',
-		'jsx',
-		'json',
-		'jsonc',
-		'latex',
-		'less',
-		'lua',
-		'makefile',
-		'markdown',
-		'objective-c',
-		'objective-cpp',
-		'php',
-		'plaintext',
-		'powershell',
-		'pug',
-		'python',
-		'r',
-		'ruby',
-		'rust',
-		'scss',
-		'sass',
-		'shellscript',
-		'sql',
-		'stylus',
-		'swift',
-		'typescript',
-		'typescriptreact',
-		'vb',
-		'vue',
-		'vue-html',
-		'xml',
-		'yaml'
-	];
-
-	return supportedLanguages.map(command => {
-		return vscode.commands.registerCommand(
-			`deot.setSyntax.${command}`,
-			() => setSyntax(command)
-		);
-	});
+	await vscode.commands.executeCommand('workbench.action.editor.changeLanguageMode');
 };

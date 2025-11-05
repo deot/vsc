@@ -54,15 +54,19 @@
 }
 ```
 
+- `deot.setSyntax`: `cmd+shift+p` -> `ss/Set Syntax`
+
 ### Menu
 
 The right-click menu in the editor window. Setting `false` can disable it.
 
+```
 {
 	'deot.showMenu': false
 }
+```
 
-#### editor window
+#### editor
 
 > 原生未支持，扩展编辑器下的右键，支持后可移除
 
@@ -70,7 +74,7 @@ The right-click menu in the editor window. Setting `false` can disable it.
 - Open Terminal Here
 - Reveal In Finder
 
-#### explorer window
+#### explorer
 
 > 原生未支持，扩展文件区域下的右键，支持后可移除
 

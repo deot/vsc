@@ -69,7 +69,6 @@ const createTabIndentFactory = (from: number) => async () => {
 
 	if (!editor) {
 		vscode.window.showErrorMessage('No file is open!');
-
 		return;
 	}
 
