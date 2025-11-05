@@ -2,11 +2,11 @@
   "name": "vsc-preferences",
   "displayName": "Deot Preferences",
   "description": "Personal Theme & Commands",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "deot",
   "repository": "https://dev.azure.com/zrd0921/vsc/_git/vsc",
   "engines": {
-    "vscode": "^1.105.0"
+    "vscode": "^1.0.0"
   },
   "categories": [
     "Themes",
@@ -322,7 +322,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.105.0",
+    "@types/vscode": "1.x",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
     "@typescript-eslint/eslint-plugin": "^8.45.0",
