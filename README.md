@@ -62,6 +62,18 @@ The right-click menu in the editor window. Setting `false` can disable it.
 	'deot.showMenu': false
 }
 
+#### editor window
+
+> 原生未支持，扩展编辑器下的右键，支持后可移除
+
 - Copy File Path
 - Open Terminal Here
 - Reveal In Finder
+
+#### explorer window
+
+> 原生未支持，扩展文件区域下的右键，支持后可移除
+
+- Duplicate(File/Folder)
+- New File(File)
+- New Folder(File)

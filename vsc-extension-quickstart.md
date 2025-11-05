@@ -17,6 +17,10 @@
 2. 按下 `Command+Shift+P` 打开命令面板输入`Deot Debug`
 3. 修改`src/extentsion`, 新窗口`Command+R`
 
+### 其他技巧
+
+- 可以查看键盘绑定，复制Command和When
+
 ## 如何发布
 
 > 确保登录：vsce login deot 

@@ -2,7 +2,7 @@
   "name": "vsc-preferences",
   "displayName": "Deot Preferences",
   "description": "Personal Theme & Commands",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "deot",
   "repository": "https://dev.azure.com/zrd0921/vsc/_git/vsc",
   "engines": {
@@ -37,6 +37,14 @@
         "title": "Copy File Path"
       },
       {
+        "command": "explorer.newFile",
+        "title": "New File"
+      },
+      {
+        "command": "explorer.newFolder",
+        "title": "New Folder"
+      },
+      {
         "command": "workbench.action.terminal.openNativeConsole",
         "title": "Open Terminal Here"
       },
@@ -51,6 +59,10 @@
       {
         "command": "deot.4spaceToTab",
         "title": "4spaceToTab"
+      },
+      {
+        "command": "deot.duplicateFile",
+        "title": "Duplicate"
       },
       {
         "command": "deot.setSyntax.c",
@@ -255,35 +267,38 @@
       }
     ],
     "menus": {
-      "commandPalette": [
-        {
-          "command": "revealFileInOS",
-          "when": "editorFocus"
-        },
-        {
-          "command": "copyFilePath",
-          "when": "editorFocus"
-        },
-        {
-          "command": "workbench.action.terminal.openNativeConsole",
-          "when": "editorFocus"
-        }
-      ],
       "editor/context": [
         {
           "command": "revealFileInOS",
-          "when": "config.deot.showMenu",
+          "when": "config.deot.showMenu && editorFocus",
           "group": "deot"
         },
         {
           "command": "workbench.action.terminal.openNativeConsole",
-          "when": "config.deot.showMenu",
+          "when": "config.deot.showMenu && editorFocus",
           "group": "deot"
         },
         {
           "command": "copyFilePath",
-          "when": "config.deot.showMenu",
+          "when": "config.deot.showMenu && editorFocus",
           "group": "deot"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "deot.duplicateFile",
+          "when": "config.deot.showMenu",
+          "group": "5_cutcopypaste@99"
+        },
+        {
+          "command": "explorer.newFile",
+          "when": "config.deot.showMenu && !explorerResourceIsFolder && !inputFocus",
+          "group": "1_deot"
+        },
+        {
+          "command": "explorer.newFolder",
+          "when": "config.deot.showMenu && !explorerResourceIsFolder && !inputFocus",
+          "group": "1_deot"
         }
       ]
     },
