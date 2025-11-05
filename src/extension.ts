@@ -3,6 +3,7 @@ import { pasteAndIndent } from './paste-and-indent';
 import { formatToIndentBase4, formatToIndentBase2 } from './space-to-tab';
 import { setSyntax } from './set-syntax';
 import { duplicateFile } from './duplicate-file';
+import { setColumns } from './set-columns';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -14,7 +15,8 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.commands.registerCommand('deot.2spaceToTab', formatToIndentBase2),
 		vscode.commands.registerCommand('deot.4spaceToTab', formatToIndentBase4),
 		vscode.commands.registerCommand('deot.duplicateFile', duplicateFile),
-		vscode.commands.registerCommand('deot.setSyntax', setSyntax)
+		vscode.commands.registerCommand('deot.setSyntax', setSyntax),
+		...setColumns()
 	);
 }
 

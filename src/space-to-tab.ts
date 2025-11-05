@@ -57,18 +57,17 @@ const getGlobalTabSize = () => {
 };
 
 const createTabIndentFactory = (from: number) => async () => {
-	const tabSize = getGlobalTabSize();
 	const editor = vscode.window.activeTextEditor!;
+	if (!editor) {
+		vscode.window.showErrorMessage('No file is open!');
+		return;
+	}
+	const tabSize = getGlobalTabSize();
 	const document = editor.document;
 
 	await vscode.commands.executeCommand('editor.action.detectIndentation');
 	await vscode.commands.executeCommand('editor.action.indentationToSpaces');
 	editor.options.tabSize = from;
-
-	if (!editor) {
-		vscode.window.showErrorMessage('No file is open!');
-		return;
-	}
 
 	try {
 		if (from === 2) {

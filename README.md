@@ -56,6 +56,23 @@
 
 - `deot.setSyntax`: `cmd+shift+p` -> `ss/Set Syntax`
 
+- `deot.setColumns.*`: One/Two/Three Columns
+
+```
+{
+	"key": "cmd+alt+1",
+	"command": "deot.setColumns.One"
+},
+{
+	"key": "cmd+alt+2",
+	"command": "deot.setColumns.Two"
+},
+{
+	"key": "cmd+alt+3",
+	"command": "deot.setColumns.Three"
+}
+```
+
 ### Menu
 
 The right-click menu in the editor window. Setting `false` can disable it.
