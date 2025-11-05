@@ -16,25 +16,25 @@ import { Button } from '@vsc/cc';
 export default {
 	name: 'vsc-vue',
 	components: {
-        'vsc-button': Button
-    },
+		'vsc-button': Button
+	},
 	props: {},
 	data() {
 		return {
-            show: false
-        };
+			show: false
+		};
 	},
 	created() {	},
 	methods: { 
-        handleClick(e = {}) {
-            console.log(`click`);
-        }
-    },
+		handleClick(e = {}) {
+			console.log(`click`);
+		}
+	},
 };
 </script>
 
 <style lang="scss" scoped>
 span {
-    font-size: 16px;
+	font-size: 16px;
 }
 </style>

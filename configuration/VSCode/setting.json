@@ -1,4 +1,6 @@
 {
+	"terminal.explorerKind": "external",
+	"terminal.external.osxExec": "iTerm.app",
 	"extensions.autoUpdate": false,
 	"emmet.syntaxProfiles": {
 		"vue": "html",

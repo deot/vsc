@@ -30,11 +30,15 @@
       },
       {
         "command": "revealFileInOS",
-        "title": "Reveal in Finder"
+        "title": "Reveal In Finder"
       },
       {
         "command": "copyFilePath",
         "title": "Copy File Path"
+      },
+      {
+        "command": "workbench.action.terminal.openNativeConsole",
+        "title": "Open Terminal Here"
       },
       {
         "command": "deot.pasteAndIndent",
@@ -259,11 +263,20 @@
         {
           "command": "copyFilePath",
           "when": "editorFocus"
+        },
+        {
+          "command": "workbench.action.terminal.openNativeConsole",
+          "when": "editorFocus"
         }
       ],
       "editor/context": [
         {
           "command": "revealFileInOS",
+          "when": "config.deot.showMenu",
+          "group": "deot"
+        },
+        {
+          "command": "workbench.action.terminal.openNativeConsole",
           "when": "config.deot.showMenu",
           "group": "deot"
         },

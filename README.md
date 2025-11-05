@@ -53,3 +53,15 @@
 	"when": "editorFocus"
 }
 ```
+
+### Menu
+
+The right-click menu in the editor window. Setting `false` can disable it.
+
+{
+	'deot.showMenu': false
+}
+
+- Copy File Path
+- Open Terminal Here
+- Reveal In Finder
