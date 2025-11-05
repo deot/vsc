@@ -4,6 +4,7 @@ import { formatToIndentBase4, formatToIndentBase2 } from './space-to-tab';
 import { setSyntax } from './set-syntax';
 import { duplicateFile } from './duplicate-file';
 import { setColumns } from './set-columns';
+import * as sm from './sublime-merge/extension';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -18,6 +19,10 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.commands.registerCommand('deot.setSyntax', setSyntax),
 		...setColumns()
 	);
+
+	sm.activate(context);
 }
 
-export function deactivate() {}
+export function deactivate() {
+	sm.deactivate();
+}

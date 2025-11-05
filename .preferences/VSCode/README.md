@@ -7,8 +7,11 @@
 - StyleLint
 - VSCode Great Icons
 - Color Highlight
-- [Sublime Merge for VSCode - Giovanni Derks](https://github.com/giovdk21/vscode-sublime-merge)
 - Deot Preferences
+
+### 已集成到Deot Preferences
+- [Sublime Merge for VSCode - Giovanni Derks](https://github.com/giovdk21/vscode-sublime-merge)
+
 
 ### 其他
 

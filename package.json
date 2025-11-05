@@ -2,7 +2,7 @@
   "name": "vsc-preferences",
   "displayName": "Deot Preferences",
   "description": "Personal Theme & Commands",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "deot",
   "repository": "https://dev.azure.com/zrd0921/vsc/_git/vsc",
   "engines": {
@@ -19,7 +19,15 @@
     "sublime text",
     "sublime merge"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "workspaceContains:.git",
+    "workspaceContains:**/.gitignore",
+    "workspaceContains:**/.git/config"
+  ],
+  "extensionDependencies": [
+    "vscode.git"
+  ],
+  "icon": "logo.png",
   "main": "./out/extension.js",
   "contributes": {
     "themes": [
@@ -85,6 +93,26 @@
       {
         "command": "deot.setColumns.Three",
         "title": "setColumns/3"
+      },
+      {
+        "command": "deotsm.openInSublimeMerge",
+        "title": "Open Git Repository..."
+      },
+      {
+        "command": "deotsm.blameInSublimeMerge",
+        "title": "Blame File..."
+      },
+      {
+        "command": "deotsm.fileHistoryInSublimeMerge",
+        "title": "File History..."
+      },
+      {
+        "command": "deotsm.lineHistoryInSublimeMerge",
+        "title": "Line History..."
+      },
+      {
+        "command": "deotsm.myCommitsInSublimeMerge",
+        "title": "Show My Commits..."
       }
     ],
     "keybindings": [
@@ -117,6 +145,28 @@
       }
     ],
     "menus": {
+      "commandPalette": [
+        {
+          "command": "deotsm.openInSublimeMerge",
+          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
+        },
+        {
+          "command": "deotsm.blameInSublimeMerge",
+          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
+        },
+        {
+          "command": "deotsm.fileHistoryInSublimeMerge",
+          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
+        },
+        {
+          "command": "deotsm.lineHistoryInSublimeMerge",
+          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
+        },
+        {
+          "command": "deotsm.myCommitsInSublimeMerge",
+          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
+        }
+      ],
       "editor/context": [
         {
           "command": "revealFileInOS",
@@ -132,6 +182,51 @@
           "command": "copyFilePath",
           "when": "config.deot.showMenu && editorFocus",
           "group": "deot"
+        },
+        {
+          "command": "deotsm.openInSublimeMerge",
+          "when": "config.deotsm.showMenu.openInSublimeMerge && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@1"
+        },
+        {
+          "command": "deotsm.fileHistoryInSublimeMerge",
+          "when": "config.deotsm.showMenu.fileHistoryInSublimeMerge == 'always' && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@2"
+        },
+        {
+          "command": "deotsm.fileHistoryInSublimeMerge",
+          "when": "!editorHasSelection && config.deotsm.showMenu.fileHistoryInSublimeMerge == 'withoutSelection' && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@2"
+        },
+        {
+          "command": "deotsm.lineHistoryInSublimeMerge",
+          "when": "config.deotsm.showMenu.lineHistoryInSublimeMerge == 'always' && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@3"
+        },
+        {
+          "command": "deotsm.lineHistoryInSublimeMerge",
+          "when": "editorHasSelection && config.deotsm.showMenu.lineHistoryInSublimeMerge == 'withSelection' && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@3"
+        },
+        {
+          "command": "deotsm.myCommitsInSublimeMerge",
+          "when": "config.deotsm.showMenu.myCommitsInSublimeMerge == 'always' && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@5"
+        },
+        {
+          "command": "deotsm.myCommitsInSublimeMerge",
+          "when": "!editorHasSelection && config.deotsm.showMenu.myCommitsInSublimeMerge == 'withoutSelection' && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@5"
+        },
+        {
+          "command": "deotsm.blameInSublimeMerge",
+          "when": "config.deotsm.showMenu.blameInSublimeMerge == 'always' && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@4"
+        },
+        {
+          "command": "deotsm.blameInSublimeMerge",
+          "when": "editorHasSelection && config.deotsm.showMenu.blameInSublimeMerge == 'withSelection'  && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "vscode_sublmerge@4"
         }
       ],
       "explorer/context": [
@@ -158,6 +253,116 @@
         "deot.showMenu": {
           "type": "boolean",
           "default": true
+        },
+        "deotsm.showInStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Set to false to disable the Sublime Merge for VSCode status bar item"
+        },
+        "deotsm.showBranchName": {
+          "type": "boolean",
+          "default": false,
+          "description": "If enabled, it will also show the current branch name in the status bar"
+        },
+        "deotsm.statusBarItemPosition": {
+          "type": "string",
+          "default": "right",
+          "enum": [
+            "left",
+            "right"
+          ],
+          "description": "Position of the status bar item (requires restart)"
+        },
+        "deotsm.showMenu.openInSublimeMerge": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the \"Open repository in Sublime Merge\" command in the contextual menu"
+        },
+        "deotsm.showMenu.fileHistoryInSublimeMerge": {
+          "type": "string",
+          "default": "always",
+          "enum": [
+            "always",
+            "withoutSelection",
+            "never"
+          ],
+          "enumDescriptions": [
+            "Always show",
+            "Show only when no text is selected",
+            "Don't show"
+          ],
+          "description": "Show the \"File history in Sublime Merge\" command in the contextual menu"
+        },
+        "deotsm.showMenu.myCommitsInSublimeMerge": {
+          "type": "string",
+          "default": "always",
+          "enum": [
+            "always",
+            "withoutSelection",
+            "never"
+          ],
+          "enumDescriptions": [
+            "Always show",
+            "Show only when no text is selected",
+            "Don't show"
+          ],
+          "description": "Show the \"Show my commits in Sublime Merge\" command in the contextual menu"
+        },
+        "deotsm.showMenu.lineHistoryInSublimeMerge": {
+          "type": "string",
+          "default": "always",
+          "enum": [
+            "always",
+            "withSelection",
+            "never"
+          ],
+          "enumDescriptions": [
+            "Always show",
+            "Show only when some text is selected",
+            "Don't show"
+          ],
+          "description": "Show the \"Line history in Sublime Merge\" command in the contextual menu"
+        },
+        "deotsm.showMenu.blameInSublimeMerge": {
+          "type": "string",
+          "default": "always",
+          "enum": [
+            "always",
+            "withSelection",
+            "never"
+          ],
+          "enumDescriptions": [
+            "Always show",
+            "Show only when some text is selected",
+            "Don't show"
+          ],
+          "description": "Show the \"Blame in Sublime Merge\" command in the contextual menu"
+        },
+        "deotsm.smergeExecutablePath": {
+          "type": [
+            "string",
+            "object"
+          ],
+          "description": "Allows to specify the full path to the \"smerge\" executable",
+          "properties": {
+            "linux": {
+              "type": "string",
+              "description": "Full path to the \"smerge\" executable on Linux"
+            },
+            "osx": {
+              "type": "string",
+              "description": "Full path to the \"smerge\" executable on macOS"
+            },
+            "windows": {
+              "type": "string",
+              "description": "Full path to the \"smerge\" executable on Windows"
+            }
+          }
+        },
+        "deotsm.debug": {
+          "type": "boolean",
+          "default": false,
+          "description": "Set to true to enable debug mode (requires restart)"
         }
       }
     }
