@@ -2,7 +2,7 @@
   "name": "vsc-preferences",
   "displayName": "Deot Preferences",
   "description": "Personal Theme & Commands",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "publisher": "deot",
   "repository": "https://dev.azure.com/zrd0921/vsc/_git/vsc",
   "engines": {
