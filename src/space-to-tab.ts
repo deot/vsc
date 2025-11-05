@@ -1,5 +1,3 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the necessary extensibility types to use in your code below
 import * as vscode from 'vscode';
 
 /**

@@ -1,5 +1,5 @@
 import { basename, dirname } from "path";
-import { Uri, commands, window, workspace, TextDocument } from "vscode";
+import { Uri, window, workspace, TextDocument } from "vscode";
 
 function getCopyName(original: string, attempt: number): [string, number] {
 	let lastIndex = original.lastIndexOf(".");
@@ -35,9 +35,15 @@ async function executeCopy(uri: Uri, attempt: number = 0) {
 	await workspace.fs.copy(oldFile, newFile);
 
 	try {
-		await window.showTextDocument(newFile);
-		await commands.executeCommand("revealInExplorer");
-		await commands.executeCommand("renameFile");
+		if (newFile.path.endsWith('.ipynb')) {
+			const doc = await workspace.openNotebookDocument(newFile);
+			await window.showNotebookDocument(doc);
+		} else {
+			const doc = await workspace.openTextDocument(newFile);
+			await window.showTextDocument(doc);
+		}
+		// await commands.executeCommand("revealInExplorer");
+		// await commands.executeCommand("renameFile");
 	} catch (e) {
 		console.log(e);
 	}
