@@ -1,0 +1,138 @@
+[
+	{
+		"keys": ["command+e"],
+		"command": "emmet_expand_abbreviation"
+	},
+	{
+		"keys": [
+			"tab"
+		],
+		"command": "emmet_expand_abbreviation",
+		"context": [
+			{ "key": "emmet_capture_abbreviation" },
+			{ "key": "selection_empty" },
+			{ "key": "has_next_field", "operand": false },
+			{ "key": "auto_complete_visible", "operand": false },
+			{ "key": "selector", "operand": "source.css, source.sass, source.less, source.scss, source.stylus, source.postcss, source.jade, text.jade, source.pug, text.pug, text.slim, text.xml, text.html - source, text.haml, text.scala.html, source string" }
+		]
+	},
+	{
+		"keys": [
+			"ctrl+shift+c"
+		],
+		"command": "copy"
+	},
+	{
+		"keys": [
+			"super+2"
+		],
+		"command": "run_macro_file",
+		"args": {
+			"file": "Packages/User/commands/to-2.sublime-macro"
+		}
+	},
+	{
+		"keys": [
+			"command+4"
+		],
+		"command": "run_macro_file",
+		"args": {
+			"file": "Packages/User/commands/to-4.sublime-macro"
+		}
+	},
+	{ 
+		"keys": ["command+i"], 
+		"command": "insert_php_constructor_property" 
+	},
+	{ 
+		"keys": ["tab"], 
+		"command": "expand_fqcn",
+		"context": [
+			{
+				"operand": "source.php",
+				"operator": "equal",
+				"match_all": true,
+				"key": "selector"
+			}
+		]
+	},
+	{ 
+		"keys": ["command+e"], 
+		"command": "find_use",
+		"context": [
+			{
+				"operand": "source.php",
+				"operator": "equal",
+				"match_all": true,
+				"key": "selector"
+			}
+		]
+	},
+	{ 
+		"keys": ["super+w"], 
+		"command": "close_guard" 
+	},
+	{
+		"keys": ["super+5"], 
+		"command": "dash_doc",
+		"args": { 
+			"flip_syntax_sensitive": true 
+		} 
+	},
+	{ 
+		"keys": ["super+y"], 
+		"command": "run_code" 
+	},
+	{
+		"keys": ["；"],
+		"command": "run_macro_file",
+		"args": {
+			"file": "Packages/User/commands/semicolon.sublime-macro"
+		}
+	},
+	{
+		"keys": [";"],
+		"command": "run_macro_file",
+		"args": {
+			"file": "Packages/User/commands/semicolon.sublime-macro"
+		}
+	},
+	{
+		"keys": ["super+r"],
+		"command": "save"
+	},
+	{ 
+		"keys": ["super+t"], 
+		"command": "terminus_open", 
+		"args": {
+			"config_name": "Default",
+			"cwd": "${file_path:${folder}}"
+		}
+	},
+	{
+		"keys": ["super+alt+`"],
+		"command": "terminus_open",
+		"args": {
+			"config_name": "Default",
+			"pre_window_hooks": [
+				["set_layout", {
+					"cols": [0.0, 1.0],
+					"rows": [0.0, 0.5, 1.0],
+					"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+				}],
+				["focus_group", {"group": 1}]
+			]
+		}
+	},
+	{ 
+		"keys": ["alt+`"], 
+		"command": "toggle_terminus_panel" 
+	},
+	{ 
+		"keys": ["command+l"], 
+		"command": "terminus_open", 
+		"args": {
+			"cwd": "${file_path:${folder}}"
+		}
+	}
+]

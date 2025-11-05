@@ -1,0 +1,82 @@
+[
+	{ 
+		"id": "markdown_preview",
+		"command": "markdown_preview",
+		"caption": "MarkDown Preview",
+	},
+	{ 
+		"id": "markdown_table",
+		"command": "markdown_table_creator",
+		"caption": "Markdown Table",
+	},
+	{ 
+		"id": "clear_console",
+		"command": "clear_console",
+		"caption": "Clear Console",
+	},
+	{ 
+		"id": "lsp_lint_fix",
+		"caption": "LSP Fix",
+		"children": [
+			{
+				"id": "lsp_lint_fix_custom",
+				"command": "lsp_code_actions",
+				"caption": "custom"
+			},
+			{
+				"id": "lsp_lint_fix_all",
+				"caption": "eslint & stylelint",
+				"command": "lsp_code_actions",
+				"args": {
+					"only_kinds": [
+						"source.fixAll.eslint",
+						"source.fixAll.stylelint"
+					]
+				},
+			}
+		]
+	},
+	{ 
+		"id": "lsp_restart_server",
+		"caption": "LSP Restart",
+		"children": [
+			{
+				"id": "lsp_restart_server_only",
+				"command": "lsp_restart_server",
+				"caption": "custom",
+			},
+			{
+				"id": "lsp_restart_server_eslint",
+				"command": "lsp_restart_server",
+				"args": {
+					"config_name": "LSP-eslint"
+				},
+				"caption": "eslint",
+			},
+			{
+				"id": "lsp_restart_server_stylelint",
+				"command": "lsp_restart_server",
+				"args": {
+					"config_name": "LSP-stylelint"
+				},
+				"caption": "stylelint",
+			},
+			{
+				"id": "lsp_restart_server_volar",
+				"command": "lsp_restart_server",
+				"args": {
+					"config_name": "LSP-volar"
+				},
+				"caption": "volar",
+			},
+			{
+				"id": "lsp_restart_server_typescript",
+				"command": "lsp_restart_server",
+				"args": {
+					"config_name": "LSP-typescript"
+				},
+				"caption": "typescript",
+			}
+		]
+	}
+]

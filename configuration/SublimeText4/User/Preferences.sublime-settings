@@ -1,0 +1,37 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/My Theme/schemes/Material.tmTheme",
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		"miniprogram_npm"
+	],
+	"font_face": "宋体",
+	"font_size": 15,
+	"hot_exit": true,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"scroll_past_end": true,
+	"spell_check": false,
+	"tab_size": 4,
+	"theme": "Ocean.sublime-theme",
+	"update_check": false,
+	"word_wrap": false,
+	"index_files": true,
+	"added_words":
+	[
+		"scroller",
+		"textarea",
+		"cascader",
+		"debounce",
+		"dropdown",
+		"vc",
+		"echarts",
+		"html",
+		"popconfirm",
+		"tsx",
+		"scss",
+	],
+}

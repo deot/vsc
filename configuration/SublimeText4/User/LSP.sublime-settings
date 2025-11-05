@@ -1,0 +1,25 @@
+{
+	"clients":
+	{
+		"LSP-typescript":
+		{
+			"enabled": false,
+		},
+		"LSP-vue":
+		{
+			"enabled": false,
+		},
+		"LSP-eslint":
+		{
+			"enabled": true,
+		},
+		"LSP-volar":
+		{
+			"enabled": true,
+		},
+		"LSP-file-watcher-chokidar":
+		{
+			"enabled": true,
+		}
+	},
+}

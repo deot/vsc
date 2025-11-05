@@ -1,0 +1,6 @@
+// Settings in here override those in "LSP-typescript/LSP-typescript.sublime-settings"
+
+{
+	"enabled": false,
+	"selector": "source.ts, source.tsx",
+}

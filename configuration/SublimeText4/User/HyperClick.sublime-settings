@@ -1,0 +1,19 @@
+// HyperClick Settings - User
+{
+	"scopes": {
+		"source.js | source.jsx | source.ts | source.tsx": {
+			"regexes": [
+				"^import\\s+['\"](.+)['\"];?$",
+				".*from\\s+['\"](.+)['\"];?$",
+				".*require\\(['\"`](.+?)['\"`]\\).*",
+				".*import\\((?:\\/\\*.+?\\*\\/\\s+)?['\"`](.+)['\"`]\\)(?:[;\\.,])?",
+			],
+			"extensions": ["ts", "js", "tsx", "jsx", "vue", "mjs", "svelte"],
+			"vendor_dirs": ["node_modules"],
+			"lookup_paths": [],
+			"aliases": {
+				"@": "./src"
+			}
+		},
+	}
+}

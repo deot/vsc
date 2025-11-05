@@ -1,0 +1,4 @@
+{
+	"enabled": true,
+    "selector": "text.html.vue | source.ts | source.tsx | source.js | source.jsx"
+}
