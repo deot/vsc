@@ -95,6 +95,38 @@
         "title": "setColumns/3"
       },
       {
+        "command": "deot.lsp.fix.all",
+        "title": "LSP-*"
+      },
+      {
+        "command": "deot.lsp.fix.js",
+        "title": "LSP-eslint"
+      },
+      {
+        "command": "deot.lsp.fix.css",
+        "title": "LSP-stylelint"
+      },
+       {
+        "command": "deot.lsp.restart.all",
+        "title": "LSP-*"
+      },
+      {
+        "command": "deot.lsp.restart.js",
+        "title": "LSP-eslint"
+      },
+      {
+        "command": "deot.lsp.restart.css",
+        "title": "LSP-stylelint"
+      },
+      {
+        "command": "deot.lsp.restart.vue",
+        "title": "LSP-volar"
+      },
+      {
+        "command": "deot.lsp.restart.ts",
+        "title": "LSP-typescript"
+      },
+      {
         "command": "deotsm.openInSublimeMerge",
         "title": "Open Git Repository..."
       },
@@ -145,28 +177,6 @@
       }
     ],
     "menus": {
-      "commandPalette": [
-        {
-          "command": "deotsm.openInSublimeMerge",
-          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
-        },
-        {
-          "command": "deotsm.blameInSublimeMerge",
-          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
-        },
-        {
-          "command": "deotsm.fileHistoryInSublimeMerge",
-          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
-        },
-        {
-          "command": "deotsm.lineHistoryInSublimeMerge",
-          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
-        },
-        {
-          "command": "deotsm.myCommitsInSublimeMerge",
-          "when": "config.git.enabled && gitOpenRepositoryCount != 0"
-        }
-      ],
       "editor/context": [
         {
           "command": "revealFileInOS",
@@ -183,6 +193,59 @@
           "when": "config.deot.showMenu && editorFocus",
           "group": "deot"
         },
+        {
+          "submenu": "deot.lsp.fix",
+          "when": "config.deot.showMenu",
+          "group": "deot_1"
+        },
+        {
+          "submenu": "deot.lsp.restart",
+          "when": "config.deot.showMenu",
+          "group": "deot_1"
+        },
+        {
+          "submenu": "deot.sm",
+          "when": "config.deot.showMenu && config.git.enabled && gitOpenRepositoryCount != 0",
+          "group": "deot_1"
+        }
+      ],
+      "deot.lsp.fix": [
+          {
+            "command": "deot.lsp.fix.all",
+            "when": "editorFocus"
+          },
+          {
+            "command": "deot.lsp.fix.js",
+            "when": "editorFocus"
+          },
+          {
+            "command": "deot.lsp.fix.css",
+            "when": "editorFocus"
+          }
+      ],
+      "deot.lsp.restart": [
+          {
+            "command": "deot.lsp.restart.all",
+            "when": "editorFocus"
+          },
+          {
+            "command": "deot.lsp.restart.js",
+            "when": "editorFocus"
+          },
+          {
+            "command": "deot.lsp.restart.css",
+            "when": "editorFocus"
+          },
+          {
+            "command": "deot.lsp.restart.vue",
+            "when": "editorFocus"
+          },
+          {
+            "command": "deot.lsp.restart.ts",
+            "when": "editorFocus"
+          }
+      ],
+      "deot.sm": [
         {
           "command": "deotsm.openInSublimeMerge",
           "when": "config.deotsm.showMenu.openInSublimeMerge && config.git.enabled && gitOpenRepositoryCount != 0",
@@ -247,6 +310,20 @@
         }
       ]
     },
+    "submenus": [
+      {
+        "id": "deot.lsp.fix",
+        "label": "LSP Fix"
+      },
+      {
+        "id": "deot.lsp.restart",
+        "label": "LSP Restart"
+      },
+      {
+        "id": "deot.sm",
+        "label": "Sublime Merge"
+      }
+    ],
     "configuration": {
       "title": "Deot Preferences",
       "properties": {

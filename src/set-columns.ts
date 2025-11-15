@@ -27,5 +27,5 @@ export const setColumns = () => {
 			createColumnsFactory(v)
 		);
 	});
-}
+};
 

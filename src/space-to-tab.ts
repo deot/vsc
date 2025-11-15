@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { getCurrentExitor } from './utils';
 
 /**
  * get range of indent target
@@ -57,9 +58,8 @@ const getGlobalTabSize = () => {
 };
 
 const createTabIndentFactory = (from: number) => async () => {
-	const editor = vscode.window.activeTextEditor!;
+	const editor = getCurrentExitor();
 	if (!editor) {
-		vscode.window.showErrorMessage('No file is open!');
 		return;
 	}
 	const tabSize = getGlobalTabSize();

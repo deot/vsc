@@ -1,10 +1,10 @@
 import * as vscode from 'vscode';
+import { getCurrentExitor } from './utils';
 
 export const setSyntax = async () => {
-	const editor = vscode.window.activeTextEditor;
+	const editor = getCurrentExitor();
 	if (!editor) {
-		vscode.window.showErrorMessage('No file is open!');
 		return;
-	}
+	};
 	await vscode.commands.executeCommand('workbench.action.editor.changeLanguageMode');
 };
