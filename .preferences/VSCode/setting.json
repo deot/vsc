@@ -52,5 +52,8 @@
 	"editor.wordWrap": "off",
 	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
 	"editor.bracketPairColorization.enabled": true,
-	"editor.bracketPairColorization.independentColorPoolPerBracketType": true
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"[markdown]": {
+		"editor.wordWrap": "off"
+	}
 }
