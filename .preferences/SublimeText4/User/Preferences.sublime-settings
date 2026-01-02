@@ -6,7 +6,6 @@
 		"node_modules",
 		"miniprogram_npm"
 	],
-	"font_face": "宋体",
 	"font_size": 15,
 	"hot_exit": true,
 	"ignored_packages":

@@ -47,7 +47,6 @@
 	"editor.scrollBeyondLastLine": true,
 	"editor.snippetSuggestions": "top",
 	"editor.insertSpaces": false,
-	"editor.fontFamily": "宋体",
 	"editor.tabSize": 4,
 	"editor.wordWrap": "off",
 	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
