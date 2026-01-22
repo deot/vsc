@@ -6,6 +6,8 @@
 - ESLint
 - StyleLint
 ```
+// 关闭默认的校验规则
+"scss.validate": false,
 // 注意 vue需要stylelint-config-recommended-vue扩展，否则vue文件提示`Unknown word (CssSyntaxError)Stylelint(CssSyntaxError)`
 "stylelint.validate": [
   "css",

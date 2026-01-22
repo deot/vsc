@@ -20,12 +20,7 @@
 	"explorer.confirmDelete": false,
 	"scm.compactFolders": false,
 	"eslint.format.enable": true,
-	"[scss]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
+	"scss.validate": false,
 	"stylelint.packageManager": "pnpm",
 	"stylelint.validate": [
 		"css",
@@ -40,7 +35,6 @@
 	"editor.fontLigatures": false,
 	"editor.fontSize": 15,
 	"editor.fontWeight": "normal",
-	"editor.formatOnPaste": true,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.renderControlCharacters": false,
 	"editor.renderWhitespace": "all",
