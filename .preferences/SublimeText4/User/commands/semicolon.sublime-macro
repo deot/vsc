@@ -1,0 +1,10 @@
+[
+    {
+        "args":
+        {
+            // "characters": ";\n"
+            "characters": ";"
+        },
+        "command": "insert"
+    }
+]

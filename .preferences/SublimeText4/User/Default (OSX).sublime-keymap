@@ -134,5 +134,15 @@
 		"args": {
 			"cwd": "${file_path:${folder}}"
 		}
+	},
+	{
+		"keys": ["super+1"],
+		"command": "lsp_code_actions",
+		"args": {
+			"only_kinds": [
+				"source.fixAll.eslint",
+				"source.fixAll.stylelint"
+			]
+		},
 	}
 ]

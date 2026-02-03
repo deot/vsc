@@ -149,6 +149,11 @@
     ],
     "keybindings": [
       {
+        "key": "cmd+1",
+        "command": "deot.lsp.fix.all",
+        "when": "editorFocus"
+      },
+      {
         "key": "cmd+2",
         "command": "deot.2spaceToTab",
         "when": "editorFocus"

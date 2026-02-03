@@ -1,0 +1,12 @@
+[
+	// 说明：setting中tab-size指缩进值
+	// 实际编码格式缩进spaces：4或者tab-size：4
+	// spaces 转 tabs
+	{ "args": { "set_translate_tabs": false }, "command": "unexpand_tabs" },
+	// 缩进单位为 2 即 tab-size：2
+	{ "args": { "setting": "tab_size", "value": 2 }, "command": "set_setting" },
+	// spaces 转 tabs
+	{ "args": { "set_translate_tabs": false }, "command": "unexpand_tabs" },
+	// 缩进单位为 4 即 tab-size：4
+	{ "args": { "setting": "tab_size", "value": 4 }, "command": "set_setting" }
+]

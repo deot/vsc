@@ -54,6 +54,8 @@
 }
 ```
 
+```
+
 - `deot.setSyntax`: `cmd+shift+p` -> `ss/Set Syntax`
 
 - `deot.setColumns.*`: One/Two/Three Columns
@@ -70,6 +72,15 @@
 {
 	"key": "cmd+alt+3",
 	"command": "deot.setColumns.Three"
+}
+```
+- `deot.lsp.fix.all`: eslint/stylelint fix
+
+```
+{
+	"key": "cmd+1",
+	"command": "deot.lsp.fix.all",
+	"when": "editorFocus"
 }
 ```
 
