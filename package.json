@@ -2,7 +2,7 @@
   "name": "vsc-preferences",
   "displayName": "Deot Preferences",
   "description": "Personal Theme & Commands",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "publisher": "deot",
   "repository": "https://dev.azure.com/zrd0921/vsc/_git/vsc",
   "engines": {
@@ -106,7 +106,7 @@
         "command": "deot.lsp.fix.css",
         "title": "LSP-stylelint"
       },
-       {
+      {
         "command": "deot.lsp.restart.all",
         "title": "LSP-*"
       },
@@ -215,40 +215,40 @@
         }
       ],
       "deot.lsp.fix": [
-          {
-            "command": "deot.lsp.fix.all",
-            "when": "editorFocus"
-          },
-          {
-            "command": "deot.lsp.fix.js",
-            "when": "editorFocus"
-          },
-          {
-            "command": "deot.lsp.fix.css",
-            "when": "editorFocus"
-          }
+        {
+          "command": "deot.lsp.fix.all",
+          "when": "editorFocus"
+        },
+        {
+          "command": "deot.lsp.fix.js",
+          "when": "editorFocus"
+        },
+        {
+          "command": "deot.lsp.fix.css",
+          "when": "editorFocus"
+        }
       ],
       "deot.lsp.restart": [
-          {
-            "command": "deot.lsp.restart.all",
-            "when": "editorFocus"
-          },
-          {
-            "command": "deot.lsp.restart.js",
-            "when": "editorFocus"
-          },
-          {
-            "command": "deot.lsp.restart.css",
-            "when": "editorFocus"
-          },
-          {
-            "command": "deot.lsp.restart.vue",
-            "when": "editorFocus"
-          },
-          {
-            "command": "deot.lsp.restart.ts",
-            "when": "editorFocus"
-          }
+        {
+          "command": "deot.lsp.restart.all",
+          "when": "editorFocus"
+        },
+        {
+          "command": "deot.lsp.restart.js",
+          "when": "editorFocus"
+        },
+        {
+          "command": "deot.lsp.restart.css",
+          "when": "editorFocus"
+        },
+        {
+          "command": "deot.lsp.restart.vue",
+          "when": "editorFocus"
+        },
+        {
+          "command": "deot.lsp.restart.ts",
+          "when": "editorFocus"
+        }
       ],
       "deot.sm": [
         {
@@ -450,8 +450,7 @@
     }
   },
   "scripts": {
-    "publish": "npm run vscode:prepublish && vsce package && vsce publish",
-    "vscode:prepublish": "pnpm run compile",
+    "publish": "bash ./publish.sh",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
