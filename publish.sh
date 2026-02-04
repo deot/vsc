@@ -31,5 +31,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	git commit -m "[build] v$VERSION"
 	# push
 	# git push origin refs/tags/v$VERSION
-	git push origin master
+	git push origin main
 fi
