@@ -15,23 +15,23 @@ This repository contains VS Code extensions published under the `deot` namespace
 
 - JavaScript
 
-![image](https://dev.azure.com/zrd0921/89a6d063-bc74-42ce-8475-cb2afc486190/_apis/git/repositories/380ad028-8b99-4d22-b602-4199ecfa5323/items?path=%2Fstatic%2Fjs.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![image](https://github.com/deot/vsc/blob/main/static/js.png?raw=true)
 
 - HTML
 
-![image](https://dev.azure.com/zrd0921/89a6d063-bc74-42ce-8475-cb2afc486190/_apis/git/repositories/380ad028-8b99-4d22-b602-4199ecfa5323/items?path=%2Fstatic%2Fhtml.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![image](https://github.com/deot/vsc/blob/main/static/html.png?raw=true)
 
 - CSS
 
-![image](https://dev.azure.com/zrd0921/89a6d063-bc74-42ce-8475-cb2afc486190/_apis/git/repositories/380ad028-8b99-4d22-b602-4199ecfa5323/items?path=%2Fstatic%2Fcss.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![image](https://github.com/deot/vsc/blob/main/static/css.png?raw=true)
 
 - TypeScript
 
-![image](https://dev.azure.com/zrd0921/89a6d063-bc74-42ce-8475-cb2afc486190/_apis/git/repositories/380ad028-8b99-4d22-b602-4199ecfa5323/items?path=%2Fstatic%2Fts.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![image](https://github.com/deot/vsc/blob/main/static/ts.png?raw=true)
 
 - Vue
 
-![image](https://dev.azure.com/zrd0921/89a6d063-bc74-42ce-8475-cb2afc486190/_apis/git/repositories/380ad028-8b99-4d22-b602-4199ecfa5323/items?path=%2Fstatic%2Fvue.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=octetStream&api-version=5.0)
+![image](https://github.com/deot/vsc/blob/main/static/vue.png?raw=true)
 
 ### Commands
 
