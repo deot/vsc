@@ -1,5 +1,16 @@
 ## Deot Preferences
 
+Seamless viewport theme & Better preference settings for ST developer.
+
+### Namespace Ownership Verification
+
+Publisher/Namespace/GitHub ID/Owner: `deot`
+
+This repository contains VS Code extensions published under the `deot` namespace on:
+
+- [Open VSX Registry](https://open-vsx.org/)
+- [VS Code Marketplace](https://marketplace.visualstudio.com/)
+
 ### Theme
 
 - JavaScript
@@ -54,7 +65,6 @@
 }
 ```
 
-```
 
 - `deot.setSyntax`: `cmd+shift+p` -> `ss/Set Syntax`
 
@@ -74,6 +84,7 @@
 	"command": "deot.setColumns.Three"
 }
 ```
+
 - `deot.lsp.fix.all`: eslint/stylelint fix
 
 ```

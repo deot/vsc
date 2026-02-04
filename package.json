@@ -1,10 +1,10 @@
 {
   "name": "vsc-preferences",
   "displayName": "Deot Preferences",
-  "description": "Personal Theme & Commands",
+  "description": "Seamless viewport theme & Better preference settings for ST developer",
   "version": "1.0.9",
   "publisher": "deot",
-  "repository": "https://dev.azure.com/zrd0921/vsc/_git/vsc",
+  "repository": "https://github.com/deot/vsc",
   "engines": {
     "vscode": "^1.0.0"
   },
