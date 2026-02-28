@@ -12,10 +12,11 @@ export const createColumnsFactory = (v?: string) => async () => {
 	}
 		
 	if (editor && editor.document) {
-		await vscode.window.showTextDocument(editor.document, {
-			viewColumn,
-			preview: false
-		});
+		if (viewColumn === 2) {
+			await vscode.commands.executeCommand('workbench.action.focusSecondEditorGroup');
+		} else if (viewColumn === 3) {
+			await vscode.commands.executeCommand('workbench.action.focusThirdEditorGroup');
+		}
 	}
 };
 
