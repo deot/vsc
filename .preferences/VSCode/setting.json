@@ -16,6 +16,7 @@
 	"workbench.colorTheme": "Deot Theme Darker",
 	"workbench.iconTheme": "vscode-great-icons",
 	"workbench.startupEditor": "newUntitledFile",
+	"workbench.editor.closeEmptyGroups": false,
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"scm.compactFolders": false,
