@@ -16,6 +16,14 @@
 	"material-icon-theme.hidesExplorerArrows": true,
 	"material-icon-theme.folders.color": "#2196f3",
 	"material-icon-theme.folders.theme": "classic",
+	"material-icon-theme.folders.associations": {
+		"node_modules": "Node",
+		"dist": "Dist",
+		"coverage": "Coverage",
+		".git": "Git",
+		".github": "GitHub",
+		".husky": "Husky"
+	},
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.colorTheme": "Deot Theme Darker",
