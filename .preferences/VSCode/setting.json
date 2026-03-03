@@ -13,10 +13,19 @@
 		"**/.svn": false
 	},
 	"files.hotExit": "onExit",
-	"workbench.colorTheme": "Deot Theme Darker",
-	"workbench.iconTheme": "vscode-great-icons",
+	"material-icon-theme.hidesExplorerArrows": true,
+	"material-icon-theme.folders.color": "#2196f3",
+	"material-icon-theme.folders.theme": "classic",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "newUntitledFile",
+	"workbench.colorTheme": "Deot Theme Darker",
+	"workbench.tree.enableStickyScroll": false,
 	"workbench.editor.closeEmptyGroups": false,
+	"workbench.colorCustomizations": {
+		"scrollbar.shadow": "#ffffff00",
+		"widget.shadow": "#ffffff00"
+	},
+	"workbench.tree.indent": 10,
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"scm.compactFolders": false,
@@ -30,6 +39,8 @@
 		"scss",
 		"vue"
 	],
+	"breadcrumbs.enabled": false,
+	"editor.stickyScroll.enabled": false,
 	"editor.accessibilitySupport": "off",
 	"editor.autoIndent": "brackets",
 	"editor.cursorStyle": "line",
@@ -49,5 +60,6 @@
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"[markdown]": {
 		"editor.wordWrap": "off"
-	}
+	},
+	"git.openRepositoryInParentFolders": "always"
 }

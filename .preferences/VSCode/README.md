@@ -17,7 +17,7 @@
   "vue"
 ],
 ```
-- VSCode Great Icons
+- Material Icon Theme
 - Color Highlight
 - Deot Preferences
 
