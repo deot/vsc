@@ -125,7 +125,7 @@ The right-click menu in the editor window. Setting `false` can disable it.
 ### Sublime Merge
 
 - [Just Publish For OpenVsx](https://open-vsx.org)
-- [Document V1.4.1](https://github.com/giovdk21/vscode-sublime-merge)
+- [Document V1.5.2](https://github.com/giovdk21/vscode-sublime-merge)
 - `vscsm` -> `deotsm`
 
 ```js
