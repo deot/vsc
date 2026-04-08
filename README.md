@@ -151,3 +151,12 @@ The right-click menu in the editor window. Setting `false` can disable it.
 	"deotsm.showMenu.blameInSublimeMerge": "withSelection",
 }
 ```
+
+##### Sublime Merge Preferences
+
+```json
+{
+	"editor_path": "/Applications/Cursor.app/Contents/Resources/app/bin/code",
+	"editor_argument_format": "--goto ${file}:${line}:${col}"
+}
+```
