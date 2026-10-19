@@ -19,9 +19,8 @@
 		// 新增行/修改行 Stage
 		"editorGutter.addedSecondaryBackground": "#82AAFF",
 		"editorGutter.modifiedSecondaryBackground": "#82AAFF",
-		// 代码编辑区颜色
+		// 代码编辑区颜色。描边沿用 surface.border
 		"editor.background": "#252b39",
-		"editor.border": "#252b39",
 		// 代码在输入时的颜色[如：中文输入时还没确定时字母颜色]
 		"editor.foreground": "#EEFFFF",
 		// 选中背景色
@@ -38,8 +37,7 @@
 		"editorLineNumber.foreground": "#8f999e",
 		// 搜索等组件最外出边框颜色
 		"editorWidget.background": "#293d45",
-		// 提示框
-		"editorSuggestWidget.background": "#293d45",
+		// 提示框。底色沿用 editorWidget.background
 		"editorSuggestWidget.border": "#293d45",
 		"editorSuggestWidget.foreground": "#dddfe1",
 		"editorSuggestWidget.selectedBackground": "#ffffff16",
@@ -50,8 +48,6 @@
 		"editor.findMatchBackground": "#ffffff40",
 		"editor.findMatchHighlightBackground": "#ffffff10",
 		"editor.findRangeHighlightBackground": "#ffffff10",
-		// 底部面板描边
-		"modernPanel.border": "#252b39",
 		// 底部状态栏背景颜色
 		"statusBar.background": "#252b39",
 		"statusBar.noFolderBackground": "#252b39",
@@ -60,15 +56,12 @@
 		"activityBar.background": "#252b39",
 		"activityBar.foreground": "#dddfe1",
 		"activityBarBadge.background": "#ec5f67cc",
-		// 最左侧活动栏描边
-		"modernActivityBar.border": "#252b39",
 		// 最左侧【项目文件区域】 头部
 		"sideBar.background": "#252b39",
 		"sideBar.foreground": "#8f999e",
 		"sideBarTitle.foreground": "#dddfe1",
 		"sideBarSectionHeader.background": "#252b39",
-		// 卡片底色与描边
-		"surface.background": "#252b39",
+		// 卡片描边。底色沿用 sideBar.background；编辑区、底部面板、活动栏描边都沿用这条
 		"surface.border": "#252b39",
 		// 最左侧【列表区域，文件管理器，选择文件展示颜色】，打开，经过
 		"list.activeSelectionBackground": "#293d45",
@@ -80,7 +73,6 @@
 		// 命令面板（Cmd+Shift+P）当前项高亮。面板底色沿用 editorWidget.background #293d45，
 		// 选中项若再使用 list.activeSelectionBackground 会和底色相同，上下移动时看不出当前行
 		"quickInputList.focusBackground": "#3d5966",
-		"quickInputList.focusForeground": "#dddfe1",
 		// 修改后的文件名要使用这个值
 		"list.warningForeground": "#8f999e",
 		"list.errorForeground": "#8f999e",
@@ -114,7 +106,7 @@
 		"name": "Global settings",
 		"settings":
 		{
-			"foreground": "#EEFFFF"
+			"foreground": "#FFFFFF"
 		}
 	},
 	{
@@ -167,7 +159,7 @@
 	},
 	{
 		"name": "Variable",
-		"scope": "variable.parameter, variable.language, support.constant, meta.function-call.arguments",
+		"scope": "variable.parameter, variable.language, support.constant",
 		"settings":
 		{
 			"foreground": "#F78C6C"
@@ -342,10 +334,7 @@
 	},
 	{
 		"name": "ts-node下需要高亮的参数，如process",
-		"scope": [
-			"variable.other.object",
-			"meta.var.expr variable.other.object.property"
-		],
+		"scope": "variable.other.object",
 		"settings":
 		{
 			"foreground": "#fac863"
@@ -462,28 +451,11 @@
 	},
 	{
 		"name": "Comment",
-		"scope": "comment",
+		"scope": "comment, comment punctuation.definition.comment, string.quoted.docstring, variable.other.jsdoc",
 		"settings":
 		{
 			"foreground": "#65737e",
 			"fontStyle": "italic"
-		}
-	},
-	{
-		"name": "Comment",
-		"scope": "comment punctuation.definition.comment, string.quoted.docstring, variable.other.jsdoc",
-		"settings":
-		{
-			"foreground": "#65737e",
-			"fontStyle": "italic"
-		}
-	},
-	{
-		"name": "Punctuation",
-		"scope": "punctuation",
-		"settings":
-		{
-			"foreground": "#95DCFF"
 		}
 	},
 	{
@@ -506,7 +478,7 @@
 	},
 	{
 		"name": "Class",
-		"scope": "entity.name, entity.name.type.class, support.type, support.class, meta.use",
+		"scope": "entity.name, entity.name.type.class, support.class, meta.use",
 		"settings":
 		{
 			"foreground": "#fac863"
@@ -895,21 +867,6 @@
 		{
 			"foreground": "#95DCFF",
 			"fontStyle": "italic"
-		}
-	},
-	{
-		"name": "Entity name",
-		"scope": "entity.name.function",
-		"settings":
-		{
-			"foreground": "#82AAFF"
-		}
-	},
-	{
-		"name": "Global settings",
-		"settings":
-		{
-			"foreground": "#FFFFFF"
 		}
 	},
 	{
