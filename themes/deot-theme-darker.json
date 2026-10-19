@@ -21,6 +21,7 @@
 		"editorGutter.modifiedSecondaryBackground": "#82AAFF",
 		// 代码编辑区颜色
 		"editor.background": "#252b39",
+		"editor.border": "#252b39",
 		// 代码在输入时的颜色[如：中文输入时还没确定时字母颜色]
 		"editor.foreground": "#EEFFFF",
 		// 选中背景色
@@ -49,6 +50,8 @@
 		"editor.findMatchBackground": "#ffffff40",
 		"editor.findMatchHighlightBackground": "#ffffff10",
 		"editor.findRangeHighlightBackground": "#ffffff10",
+		// 底部面板描边
+		"modernPanel.border": "#252b39",
 		// 底部状态栏背景颜色
 		"statusBar.background": "#252b39",
 		"statusBar.noFolderBackground": "#252b39",
@@ -57,11 +60,16 @@
 		"activityBar.background": "#252b39",
 		"activityBar.foreground": "#dddfe1",
 		"activityBarBadge.background": "#ec5f67cc",
+		// 最左侧活动栏描边
+		"modernActivityBar.border": "#252b39",
 		// 最左侧【项目文件区域】 头部
 		"sideBar.background": "#252b39",
 		"sideBar.foreground": "#8f999e",
 		"sideBarTitle.foreground": "#dddfe1",
 		"sideBarSectionHeader.background": "#252b39",
+		// 卡片底色与描边
+		"surface.background": "#252b39",
+		"surface.border": "#252b39",
 		// 最左侧【列表区域，文件管理器，选择文件展示颜色】，打开，经过
 		"list.activeSelectionBackground": "#293d45",
 		"list.activeSelectionForeground": "#dddfe1",
@@ -69,6 +77,10 @@
 		"list.inactiveSelectionForeground": "#dddfe1",
 		"list.hoverBackground": "#293d45",
 		"list.hoverForeground": "#dddfe1",
+		// 命令面板（Cmd+Shift+P）当前项高亮。面板底色沿用 editorWidget.background #293d45，
+		// 选中项若再使用 list.activeSelectionBackground 会和底色相同，上下移动时看不出当前行
+		"quickInputList.focusBackground": "#3d5966",
+		"quickInputList.focusForeground": "#dddfe1",
 		// 修改后的文件名要使用这个值
 		"list.warningForeground": "#8f999e",
 		"list.errorForeground": "#8f999e",
