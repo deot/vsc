@@ -47,6 +47,10 @@
         "title": "Copy File Path"
       },
       {
+        "command": "deot.copyFileLine",
+        "title": "Copy File Line"
+      },
+      {
         "command": "explorer.newFile",
         "title": "New File"
       },
@@ -195,6 +199,11 @@
         },
         {
           "command": "copyFilePath",
+          "when": "config.deot.showMenu && editorFocus",
+          "group": "deot"
+        },
+        {
+          "command": "deot.copyFileLine",
           "when": "config.deot.showMenu && editorFocus",
           "group": "deot"
         },
